@@ -17,10 +17,11 @@
         {% if messages %}
         <ul>
         	{% for message in messages %}
-        	<li>{{ message}}</li>
+        	<li>{{ message }}</li>
+        	{% end for %}
         </ul>
         {% endif %}	
-        {% endwith}
+        {% endwith %}
         {% block content %}{% endblock %}
     </body>
 </html>
